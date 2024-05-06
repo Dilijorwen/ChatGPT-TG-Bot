@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+    bot:
+        container_name: TG-Bot-SmolSchool
+        image: tg-bot-smolschool
+
+        build:
+            dockerfile: Dockerfile
+        command:
+            -   sh -c "pythom -m bot"
+        env_file:
+            - ./.env
+        restart: on-failure
+
+        ports:
+            - "443:443"
+
+        volumes:
+          - ./logs:/~/PycharmProjects/TG-Bot-SmolSchool/logs
+
+volumes:
+  logs:

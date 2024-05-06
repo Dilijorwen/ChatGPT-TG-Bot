@@ -1,2 +1,6 @@
 aiogram==3.5.0
 python-dotenv==1.0.1
+openai==1.25.1
+diffusers==0.27.2
+accelerate==0.30.0
+transformers==4.40.1

@@ -13,4 +13,5 @@ async def command_start_handler(message: Message) -> None:
     # После messeage стоит дополнение к функции, которое говорит, что бот сделает
     # massage.from_user.full_name - Определяет имя пользователья
     # html.bold - делает жирную разметку для имени пользователя в стиле html(для этого мы ниже делам parse_mode)
-    await message.answer(f"Hello, {html.bold(message.from_user.full_name)}! \nНапиши /help")
+    await message.answer(f"Привет, {html.bold(message.from_user.full_name)}!\n"
+                         f"Я твой мини GPT-помошник")

@@ -8,8 +8,8 @@ services:
     # Название сервиса, если хотите, можете переименовать
     bot:
         # Это просто имена контейнера и образа
-        container_name: TG-Bot # называйте, как хотите
-        image: tg-bot # здесь только с маленькой буквы
+        container_name: TG-Bot-SmolSchool # называйте, как хотите
+        image: tg-bot-SmolSchool # здесь только с маленькой буквы
 
         # указываем наш dockerfile
         build:

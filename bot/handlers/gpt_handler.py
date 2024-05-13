@@ -1,20 +1,18 @@
-from aiogram import Router
-from aiogram.types import Message
-
-# from bot.functions.ChatGPT import gpt
-
-router = Router()
-
 from openai import OpenAI
 from dotenv import load_dotenv
+from aiogram import Router
+from aiogram.types import Message
 import os
+
+router = Router()
 
 load_dotenv()
 
 OPENAI_TOKEN = os.environ["OPENAI_TOKEN"]
 MODEL_GPT = os.environ["MODEL_GPT"]
 
-client = OpenAI(api_key=f"{OPENAI_TOKEN}")
+client = OpenAI(api_key=f"{OPENAI_TOKEN}",
+                base_url="https://api.proxyapi.ru/openai/v1")  # Подключаемся к прокси серверу, для него vpn не надо подключать
 
 
 def gpt(text):

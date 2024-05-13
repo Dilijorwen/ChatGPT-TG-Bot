@@ -73,7 +73,6 @@ async def command_image_handler(message: Message):
     # Вызываем функцию
     text_to_image(text, id)
 
-
     try:
         await message.reply_photo(photo=FSInputFile(f"images/{id}.png"))
         # Ловит все ошибки

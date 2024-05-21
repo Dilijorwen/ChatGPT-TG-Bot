@@ -12,7 +12,7 @@ ChatGPT Telegra Bot
 
 У бота есть команды /help
 <p align="center">
-  <img width="300" height="600" src="![Uploading Снимок экрана 2024-05-21 в 15.15.56.png…]()">
+  <img width="300" height="600" src="">
 </p>
 
 

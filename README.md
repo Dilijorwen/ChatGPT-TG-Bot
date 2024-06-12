@@ -15,7 +15,7 @@ The bot consists of minimal functions, using the library aiogram, while communic
 
 The bot has commands /help. It will show all the existing commands.
 The /dice command will toss a hexagonal die.
-The /image {Text} command will generate a picture in the specified promt, but will do it poorly.
+The /image {Text} command will generate a picture in the specified prompt, but will do it poorly.
 Just typing any message will get you a GPT response.
 
 The git.env file has all the project settings. Change the name of the file to ".env"
@@ -36,27 +36,27 @@ Technologies
 Русское описание
 ===================
 
-ChatGPT Telegra Bot(ru)
+ChatGPT Telegra Bot
 --------------------
 
 Этот бот был реализован в качестве фриланс проекта для школы SmolSchool, сейчас он поддерживает только общение без контекста, но запустить его можно через докер на собственном сервере.
 Проект мне показался интересным, так как он помог мне немного вспомнить синтаксис языка. Был интересно поработать с докером, реализовать работу бота. Потому считаю, что данный проект, еще и хороший для начала обучения программированию для школьников.
 
 
-Полное описание проекта(ru)
+Полное описание проекта
 ---------------------------
 
 Бот состоит из минимальных функций, используя библиотеку aiogram, при этом связь gpt идет через прокси [отсюда](https://proxyapi.ru), но если вдруг нужно будет изменить на обычный способ, то, достаточно удалить все, что находится внутри OpenAI(). Картинки генерируются через этот [сервис](https://www.edenai.co/post/how-to-generate-images-from-text-with-python), при этом можно изменить на тот же, что мы используем и для gpt.
 
 У бота есть команды /help. Она покажет все существующие команды.
 Команда /dice подбросит шестигранный кубик.
-Команда /image {Текст} сгенерирует картинку по-указанному промту, но сделает это плохо.
+Команда /image {Текст} сгенерирует картинку по-указанному промпту, но сделает это плохо.
 Просто введя любое сообщение, вам ответит GPT.
 
 В файле git.env есть все настройки проекта. У файла измените название на ".env"
 
 
-Технологии(ru)
+Технологии
 --------------
 
 - Язык программирования: Python

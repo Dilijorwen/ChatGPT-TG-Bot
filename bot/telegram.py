@@ -19,10 +19,10 @@ async def main() -> None:
     # Здесь мы присеваем переменной TELEGRAM_BOT_TOKEN значение, которое он вытащил по ключу из “.env”.
     TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
-    # Объявляем диспечер
+    # Объявляем диспетчер
     dp = Dispatcher()
 
-    # Добовляем в наш диспечер роутеры
+    # Добавляем в наш диспетчер роутеры
     dp.include_routers(start_handler.router, help_handler.router, dice_handler.router,
                        image_handler.router, gpt_handler.router)
 

@@ -27,7 +27,9 @@ async def main() -> None:
                        image_handler.router, gpt_handler.router)
 
     # Объявили бота с токеном c парс модом, который будет форматировать сообщения
-    bot = Bot(token=TELEGRAM_BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    # ParseMode.MARKDOWN Нужно для форматирования кода в тексте
+    bot = Bot(token=TELEGRAM_BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.MARKDOWN))
+
 
     # Начинаем полинг
     await dp.start_polling(bot)
